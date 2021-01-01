@@ -22,7 +22,7 @@ code {
 }
 
 header {
-  height: 100px;
+  height: 80px;
   border-bottom: 1px solid;
 }
 
@@ -36,4 +36,19 @@ footer {
 
 main {
   margin: 100px auto;
+}
+
+.logo {
+  width: 60px;
+}
+
+.cart-toggler {
+  position: relative;
+}
+
+.cart-toggler span {
+  position: absolute;
+      top: 35%;
+    left: 75%;
+    transform: translate(-50%, -50%);
 }
