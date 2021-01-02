@@ -3,7 +3,7 @@ const Product = ({ product, addToCart }) => {
 
     return (
         <>
-            <div className="col-lg-4 col-md-3">
+            <div className="col-md-6">
                 <div className="card mb-5">
                     <div className="card-body border-0">
                         <div style={{ height: "325px" }}> <img style={{ objectFit: "cover", height: "300px", width: "100%" }} className="img-fluid mt-1 mb-4" src={product.media.source} alt={product.name} /></div>
