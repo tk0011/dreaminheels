@@ -1,7 +1,8 @@
 import React from 'react'
 import MiniCart from '../MiniCart/MiniCart';
 import logo from "./../../assets/images/logo.png"
-const Header = ({ totalItems }) => {
+const Header = ({ cart }) => {
+
     return (
         <>
             <header>
@@ -22,7 +23,7 @@ const Header = ({ totalItems }) => {
                                     <a className="nav-link" href="#">Products</a>
                                 </li>
                                 <li className="nav-item" style={{ cursor: "pointer" }}>
-                                    <MiniCart totalItems={totalItems} />
+                                    <MiniCart cart={cart} />
                                 </li>
                             </ul>
                         </div>

@@ -35,7 +35,7 @@ const App = () => {
 
   return (
     <>
-      <Header totalItems={cart.total_items} />
+      <Header cart={cart} />
       <main>
         <Loader promiseTracker={usePromiseTracker} color={'#333'} background={"#fff"} />
         < Products products={products} addToCart={handleCart} />
