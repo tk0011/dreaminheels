@@ -21,10 +21,8 @@ const Header = ({ totalItems }) => {
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">Products</a>
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link cart-toggler" href="#">
-                                        <MiniCart totalItems={totalItems} />
-                                    </a>
+                                <li className="nav-item" style={{ cursor: "pointer" }}>
+                                    <MiniCart totalItems={totalItems} />
                                 </li>
                             </ul>
                         </div>

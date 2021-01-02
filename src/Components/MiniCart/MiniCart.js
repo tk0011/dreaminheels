@@ -1,38 +1,32 @@
-import React, { useState } from 'react';
-import { Drawer, Button } from 'antd';
+import React from 'react'
+import Cart from '../../assets/images/shopping-cart.svg'
+const MiniCart = () => {
 
-const MiniCart = ({ totalItems }) => {
-    const [visible, setVisible] = useState(false);
+    const openCart = () => {
+        document.getElementById("cartSidebar").style.width = "32%";
+    }
 
-    const showDrawer = () => {
-        setVisible(true);
-    };
-
-    const onClose = () => {
-        setVisible(false);
-    };
+    const closeCart = () => {
+        document.getElementById("cartSidebar").style.width = "0";
+    }
 
     return (
-        <>
-            <Button type="primary" onClick={showDrawer}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-bag" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5H2z" />
-                </svg>
-                <span className="badge badge-danger badge-pill">{totalItems}</span>
-            </Button>
-            <Drawer
-                title="Basic Drawer"
-                placement="right"
-                closable={false}
-                onClose={onClose}
-                visible={visible}
-            >
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-            </Drawer>
-        </>
-    );
-};
+        <div>
+            <div id="cartSidebar" class="sidenav">
+                <a href="javascript:void(0)" className="closebtn" onClick={() => closeCart()}>&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div onClick={() => openCart()} style={{ width: '20px', padding: '0.5rem 0' }}>
+
+                <img src={Cart} alt="cart" className="img-fluid" />
+
+            </div>
+        </div >
+    )
+}
 
 export default MiniCart;

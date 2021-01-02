@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { commerce } from './lib/commerce'
+import { trackPromise, usePromiseTracker } from 'react-promise-tracker'
+import Loader from 'react-promise-loader';
+
 import Footer from './Components/Footer/Footer'
 import Header from './Components/Header/Header'
 import Products from './Components/Products/Products'
@@ -10,13 +13,13 @@ const App = () => {
   const [cart, setCart] = useState({})
 
   const fetchProducts = async () => {
-    const { data } = await commerce.products.list();
+    const { data } = await trackPromise(commerce.products.list());
 
     setProducts(data);
   }
 
   const fetchCart = async () => {
-    setCart(await commerce.cart.retrieve());
+    setCart(await trackPromise(commerce.cart.retrieve()));
   }
 
   useEffect(() => {
@@ -34,7 +37,8 @@ const App = () => {
     <>
       <Header totalItems={cart.total_items} />
       <main>
-        <Products products={products} addToCart={handleCart} />
+        <Loader promiseTracker={usePromiseTracker} color={'#333'} background={"#fff"} />
+        < Products products={products} addToCart={handleCart} />
       </main>
       <Footer />
     </>
