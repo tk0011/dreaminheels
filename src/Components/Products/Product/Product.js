@@ -59,6 +59,7 @@ const Product = ({ product, addToCart }) => {
                     </div>
                 </div>
 
+
             </motion.div >
         </>
     )
