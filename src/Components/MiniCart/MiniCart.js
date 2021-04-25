@@ -13,9 +13,6 @@ const MiniCart = ({ cart, deleteItem, updateCart }) => {
         document.getElementsByTagName('main')[0].classList.remove('menu_open');
     }
 
-    console.log(cart);
-
-
     return (
         <div>
             <div id="cartSidebar" className="sidenav">

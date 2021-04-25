@@ -10,7 +10,8 @@ import Products from './Components/Products/Products';
 import ProductDetail from './Components/ProductDetail/ProductDetail'
 import Homepage from './Components/Homepage/Homepage';
 import Cart from './Components/Cart/Cart';
-import Notfound from './Components/Notfound/Notfound'
+import ProtectedRoute from './Components/ProtectedRoutes/ProtectedRoute';
+import Notfound from './Components/Notfound/Notfound';
 
 const App = () => {
 
@@ -32,7 +33,6 @@ const App = () => {
   }, [])
 
   const addItemToCart = (productId, variantInfo) => {
-    console.log(variantInfo)
     if (variantInfo) {
       commerce.cart.add(productId, 1, variantInfo)
         .then(res => {
@@ -71,10 +71,7 @@ const App = () => {
             <Route exact path="/product/:_id">
               <ProductDetail addToCart={addItemToCart} deleteItem={deleteItemFromCart} updateCart={updateItemCart} cart={cart} />
             </Route>
-            <Route exact path="/cart">
-              <Loader promiseTracker={usePromiseTracker} color={'#333'} background={"#fff"} />
-              <Cart cart={cart} deleteItem={deleteItemFromCart} updateCart={updateItemCart} />
-            </Route>
+            <ProtectedRoute exact path="/cart" render={() => <Cart cart={cart} deleteItem={deleteItemFromCart} updateCart={updateItemCart} />} />
             <Route>
               <Notfound />
             </Route>

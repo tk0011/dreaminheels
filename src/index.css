@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600&family=Open+Sans:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600&family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
 
 * {
   scrollbar-width: thin;
@@ -30,8 +30,8 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   padding: 0;
-  display:flex; 
-  flex-direction:column; 
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   font-size: 15px;
 }
@@ -48,10 +48,10 @@ code {
 }
 
 header {
- min-height: 75px;
+  min-height: 75px;
   -webkit-box-shadow: 0px 1px 10px -8px #333;
-  -moz-box-shadow:   0px 1px 10px -8px #333;
-  box-shadow:  0px 1px 10px -8px #333;
+  -moz-box-shadow: 0px 1px 10px -8px #333;
+  box-shadow: 0px 1px 10px -8px #333;
   position: fixed;
   width: 100%;
   z-index: 99999999999;
@@ -70,6 +70,7 @@ main {
   position: relative;
   top: 75px;
   transition: 200ms ease-in-out;
+  min-height: 90vh;
 }
 
 footer {
@@ -79,7 +80,7 @@ footer {
   color: #fff;
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;  
+  align-items: baseline;
   justify-content: center;
   position: relative;
   bottom: -75px;
@@ -88,7 +89,6 @@ footer {
 footer p {
   font-size: 10px;
 }
-
 
 .logo {
   width: 60px;
@@ -100,11 +100,11 @@ footer p {
 
 .cart-toggler span {
   position: absolute;
-      top: 25%;
-    left: 98%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    padding: 4px 5px;
+  top: 25%;
+  left: 98%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  padding: 4px 5px;
 }
 
 .sidenav {
@@ -118,37 +118,45 @@ footer p {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 30px;
-   -webkit-box-shadow: -5px 0px 17px -8px #ccc;
-  -moz-box-shadow:   -5px 0px 17px -8px #ccc;
-  box-shadow:  -5px 0px 17px -8px #ccc;
-  cursor:auto;
+  -webkit-box-shadow: -5px 0px 17px -8px #ccc;
+  -moz-box-shadow: -5px 0px 17px -8px #ccc;
+  box-shadow: -5px 0px 17px -8px #ccc;
+  cursor: auto;
 }
 
-
 .card {
-    -webkit-box-shadow: 0px 1px 10px -8px #333;
-  -moz-box-shadow:   0px 1px 10px -8px #333;
-  box-shadow:  0px 1px 10px -8px #333;
+  -webkit-box-shadow: 0px 1px 10px -8px #333;
+  -moz-box-shadow: 0px 1px 10px -8px #333;
+  box-shadow: 0px 1px 10px -8px #333;
   border: none;
   border-radius: 0px !important;
   transition: 0.4s linear;
 }
 
 .card:hover {
-  -webkit-box-shadow:0 12px 22px -5px rgba(0,0,0,0.25), 0 6px 12px -3px rgba(0,0,0,0.22);
-  -moz-box-shadow:   0 12px 22px -5px rgba(0,0,0,0.25), 0 6px 12px -3px rgba(0,0,0,0.22);
-   box-shadow: 0 12px 22px -5px rgba(0,0,0,0.25), 0 6px 12px -3px rgba(0,0,0,0.22);
+  -webkit-box-shadow: 0 12px 22px -5px rgba(0, 0, 0, 0.25),
+    0 6px 12px -3px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0 12px 22px -5px rgba(0, 0, 0, 0.25),
+    0 6px 12px -3px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 12px 22px -5px rgba(0, 0, 0, 0.25),
+    0 6px 12px -3px rgba(0, 0, 0, 0.22);
   transform: scale(1.01);
   border-radius: 0px !important;
 }
 
-input:focus,select:focus{
+input:focus,
+select:focus {
   outline: none;
   border: none;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: "Roboto" , sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
   letter-spacing: normal;
 }
 
@@ -157,55 +165,63 @@ nav li a {
 }
 
 .pro_one {
-  background: linear-gradient(rgba(0,0,0,0.2) , rgba(0,0,0,0.3)), url('./assets/images/heelsbanner1.jpg') no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url("./assets/images/heelsbanner1.jpg") no-repeat;
   background-size: 100% 100%;
 }
 
 .pro_two {
-   background: linear-gradient(rgba(0,0,0,0.2) , rgba(0,0,0,0.3)), url('./assets/images/heelsbanner2.jpg') no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url("./assets/images/heelsbanner2.jpg") no-repeat;
   background-size: 100% 125%;
   background-position: 100% 80%;
 }
 
-.pro_one , .pro_two{
+.pro_one,
+.pro_two {
   padding: 175px 0;
 }
 
-
-.pro_one h1 , .pro_two h1 {
+.pro_one h1,
+.pro_two h1 {
   font-size: 72px;
   color: #fff;
-  font-family: 'Bitter';
+  font-family: "Bitter";
   letter-spacing: 2px;
   font-weight: 500;
 }
 
-.pro_one p , .pro_two p{
+.pro_one p,
+.pro_two p {
   font-size: 26px;
   margin: 10px 0 15px 0;
   color: #fff;
 }
 
-.pro_one .button , .pro_two .button {
+.pro_one .button,
+.pro_two .button {
   margin: 15px 0;
   padding: 15px 40px;
   font-size: 16px;
   font-weight: 400;
-  transition: 200ms ease-in-out;  
+  transition: 200ms ease-in-out;
 }
 
-.pro_one .button span , .pro_two .button span{
+.pro_one .button span,
+.pro_two .button span {
   position: absolute;
   opacity: 0;
   visibility: hidden;
   transition: 200ms ease-in-out;
 }
 
-.pro_one .button:hover , .pro_two .button:hover {
+.pro_one .button:hover,
+.pro_two .button:hover {
   padding: 15px 50px 15px 40px;
 }
 
-.pro_one .button:hover span , .pro_two .button:hover span{
+.pro_one .button:hover span,
+.pro_two .button:hover span {
   opacity: 1;
   visibility: visible;
   margin-left: 10px;
@@ -221,117 +237,117 @@ nav li a {
 .pro_four {
   padding: 60px 0;
   background: #f2f2f280;
-  color:#313437;
+  color: #313437;
 }
 
 .pro_four h1 {
   font-size: 32px;
   text-transform: capitalize;
   font-weight: 400;
-  margin-bottom:20px;
-  color:#313437;
+  margin-bottom: 20px;
+  color: #313437;
 }
 
 .pro_five {
   padding: 60px 0;
-  background-color:#eef4f7;
+  background-color: #eef4f7;
 }
 
 .testimonials-clean {
-  color:#313437;
+  color: #313437;
 }
 
 .testimonials-clean p {
-  color:#7d8285;
+  color: #7d8285;
 }
 
 .testimonials-clean h1 {
-  margin-bottom:20px;
-  color:inherit;
+  margin-bottom: 20px;
+  color: inherit;
   font-size: 32px;
   text-transform: capitalize;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .testimonials-clean h1 {
-    margin-bottom:25px;
-    padding-top:25px;
-    font-size:24px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
   }
 }
 
 .testimonials-clean .intro {
-  max-width:500px;
-  margin:0 auto;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .testimonials-clean .intro p {
-  margin-bottom:0;
+  margin-bottom: 0;
 }
 
 .testimonials-clean .people {
-  padding:50px 0 20px;
+  padding: 50px 0 20px;
 }
 
 .testimonials-clean .item {
-  margin-bottom:32px;
+  margin-bottom: 32px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .testimonials-clean .item {
-    height:220px;
+    height: 220px;
   }
 }
 
 .testimonials-clean .item .box {
-  padding:30px;
-  background-color:#fff;
-  position:relative;
+  padding: 30px;
+  background-color: #fff;
+  position: relative;
 }
 
 .testimonials-clean .item .box:after {
-  content:'';
-  position:absolute;
-  left:30px;
-  bottom:-24px;
-  width:0;
-  height:0;
-  border:15px solid transparent;
-  border-width:12px 15px;
-  border-top-color:#fff;
+  content: "";
+  position: absolute;
+  left: 30px;
+  bottom: -24px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-width: 12px 15px;
+  border-top-color: #fff;
 }
 
 .testimonials-clean .item .author {
-  margin-top:28px;
-  padding-left:25px;
+  margin-top: 28px;
+  padding-left: 25px;
 }
 
 .testimonials-clean .item .name {
-  font-weight:bold;
-  margin-bottom:2px;
-  color:inherit;
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: inherit;
 }
 
 .testimonials-clean .item .title {
-  font-size:13px;
-  color:#9da9ae;
+  font-size: 13px;
+  color: #9da9ae;
 }
 
 .testimonials-clean .item .description {
-  font-size:15px;
-  margin-bottom:0;
+  font-size: 15px;
+  margin-bottom: 0;
 }
 
 .testimonials-clean .item img {
-  max-width:40px;
-  float:left;
-  margin-right:12px;
-  margin-top:-5px;
+  max-width: 40px;
+  float: left;
+  margin-right: 12px;
+  margin-top: -5px;
 }
 
 .popup-content {
   margin: auto;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   width: 40%;
   color: #fff;
   font-weight: 500;
@@ -346,7 +362,7 @@ nav li a {
 .popup-arrow {
   color: rgb(255, 255, 255);
 }
-[role='tooltip'].popup-content {
+[role="tooltip"].popup-content {
   width: 200px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
 }
@@ -354,7 +370,7 @@ nav li a {
 .popup-overlay {
   background: rgba(0, 0, 0, 0.1);
 }
-[data-popup='tooltip'].popup-overlay {
+[data-popup="tooltip"].popup-overlay {
   background: transparent;
 }
 
@@ -376,7 +392,8 @@ nav li a {
   border-radius: 6px;
 }
 
-.cart_main .cart_item_list , .cart_main .cart_item_list> div {
+.cart_main .cart_item_list,
+.cart_main .cart_item_list > div {
   width: 100%;
 }
 
@@ -387,7 +404,7 @@ nav li a {
   margin-left: 20px;
 }
 
-.cart_main .cart_item_info > div:last-child{
+.cart_main .cart_item_info > div:last-child {
   margin: 0 !important;
 }
 
@@ -396,7 +413,8 @@ nav li a {
   margin-bottom: 5px;
 }
 
-.cart_main .cart_item_list .cart_item_info h5, .cart_main .cart_item_list .cart_item_info h6 {
+.cart_main .cart_item_list .cart_item_info h5,
+.cart_main .cart_item_list .cart_item_info h6 {
   margin: 0px !important;
 }
 
@@ -405,7 +423,7 @@ nav li a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: calc( 100vh - 100px);
+  height: calc(100vh - 100px);
 }
 
 .cart_totals {
@@ -413,8 +431,9 @@ nav li a {
   border-radius: 6px;
   height: 225px;
   border: 1px solid #eef4f7;
+  position: sticky;
+  top: 100px;
 }
-
 
 .cart_totals h4 {
   text-align: center;
@@ -444,13 +463,25 @@ nav li a {
 
 .errorpage > div:nth-child(2) h1 {
   font-size: 150px;
-  font-family: 'Bitter';
+  font-family: "Bitter";
   font-weight: 400;
   color: #333;
 }
 
 .errorpage > div:nth-child(2) p {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   color: #333;
-  font-size:15px;
+  font-size: 15px;
+}
+
+#dropdownMenu2:hover {
+  background: transparent !important;
+}
+
+#usr_nm {
+  font-size: 12px;
+  width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
